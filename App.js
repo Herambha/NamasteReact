@@ -6,7 +6,7 @@ const element = React.createElement("div", {
     id: "h1"
 }, "Hello! This is H1 Tag of Child1"),
 React.createElement("h2", {
-    id: "h2"
+    id: "h3"
 }, "Hello! This is H2 Tag of Child1")]
 ),React.createElement("div", {
     id: "child2"
