@@ -1,24 +1,54 @@
-const element = React.createElement("div", {
-    id: "parent"
-}, [React.createElement("div", {
-    id: "child1"
-}, [React.createElement("h1", {
-    id: "h1"
-}, "Hello! This is H1 Tag of Child1"),
-React.createElement("h2", {
-    id: "h3"
-}, "Hello! This is H2 Tag of Child1")]
-),React.createElement("div", {
-    id: "child2"
-}, [React.createElement("h1", {
-    id: "h1"
-}, "Hello! This is H1 Tag of Child2"),
-React.createElement("h2", {
-    id: "h2"
-}, "Hello! This is H2 Tag of Child2")]
-)]
-);
-console.log(element);
+import React from "react";
+import ReactDOM from "react-dom/client"
+
+const Header = () => {
+    return (
+        <div className="header">
+            <div className="logo-container">
+                <img className="logo" src="https://thumbs.dreamstime.com/b/food-delivery-logo-design-template-134749604.jpg"></img>
+            </div>
+            <div className="nav-items">
+                <ul>
+                    <li>Home</li>
+                    <li>About us</li>
+                    <li>Contact us</li>
+                </ul>
+            </div>
+        </div>
+
+    )
+}
+
+const RestaurantCard = () => {
+    return (
+        <div className="res-card">
+            <h3>Kalpana Hotel</h3>
+        </div>
+    )
+}
+
+const Body = () => {
+    return (
+        <div className="body">
+            <div className="search">Search
+            </div>
+            <div className="res-container">
+                <RestaurantCard/>
+            </div>
+        </div>
+    )
+}
+const AppLayout = () => {
+ return(
+    <div className="app">
+        <Header/>
+        <Body/>
+    </div>
+ )
+}
+
+
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
-// console.log(root);
-root.render(element);
+
+root.render(<AppLayout />);

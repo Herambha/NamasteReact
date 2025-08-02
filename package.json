@@ -1,0 +1,30 @@
+{
+  "name": "namastereact",
+  "version": "1.0.0",
+  "description": "This is react app created by Aditya Gandhi",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Herambha/NamasteReact.git"
+  },
+  "keywords": [
+    "react"
+  ],
+  "author": "Aditya Gandhi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Herambha/NamasteReact/issues"
+  },
+  "homepage": "https://github.com/Herambha/NamasteReact#readme",
+  "dependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "parcel": "^2.15.4"
+  }
+}
